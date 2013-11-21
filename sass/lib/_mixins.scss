@@ -1,7 +1,7 @@
-$step1000: 1000px;
+$step1024: 1024px;
 $step1200: 1200px;
 $step880: 880px;
-$step3: 940px;
+$step600: 600px;
 $step4: 830px;
 $step5: 700px;
 $step6: 550px;
@@ -12,13 +12,13 @@ $step7: 320px;
 		// narrower than $width
 		@media only screen and (max-width: $step1200) { @content; }
 	}
-	@else if $media == step1000 {
+	@else if $media == step1024 {
 		// wider than $width
-		@media only screen and (max-width: $step1000) { @content; }
+		@media only screen and (max-width: $step1024) { @content; }
 	}
-	@else if $media == step2 {
+	@else if $media == step600 {
 		// wider than $width
-		@media only screen and (max-width: $step2) { @content; }
+		@media only screen and (max-width: $step600) { @content; }
 	}
 	@else if $media == step880 {
 		// wider than $width

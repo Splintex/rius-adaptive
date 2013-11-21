@@ -60,6 +60,12 @@
 	color: #fff
 	font-size: 20px
 	background: url(../img/form-bg.jpg) 0 0 repeat
+	+r(step1024)
+		font-size: 16px
+	+r(step880)
+		font-size: 14px
+	+r(step600)
+		font-size: 12px
 	ul
 		+clr
 	li
@@ -74,3 +80,10 @@
 	img
 		vertical-align: middle
 		margin-right: 29px
+		+r(step880)
+			margin-right: 4%
+		+r(step600)
+			font-size: 13%
+			width: 60px
+			height: auto
+			
