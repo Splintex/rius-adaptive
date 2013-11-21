@@ -1,0 +1,76 @@
+.main-slider
+	position: relative
+	color: #fff
+	min-height: 385px
+	padding-top: 93px
+	background: url(../img/index-bg.jpg) 50% 0 no-repeat
+	+box-sizing(border-box)
+	+background-size(100%, auto)
+	.l-container
+		position: relative
+
+.main-slider__item
+	text-shadow: 0 1px 0 #00267f
+	div
+		max-width: 315px
+		margin-bottom: 18px
+
+.main-slider__title
+	+font
+	font-size: 60px
+	+gpu
+.main-slider__nav
+	position: absolute
+	top: 89px
+	left: 327px
+	z-index: 100
+	button
+		float: left
+		position: relative
+		width: 22px
+		height: 18px
+		+box-sizing(border-box)
+		+background-image(linear-gradient(white, #dddede))
+		+box-shadow(inset 0 0 1px white, 0 1px 1px #2f2f30)
+		&:hover
+			+background-image(linear-gradient(#dcdddd, white))
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			margin: -5px 0 0 -4px
+
+.main-slider__prev
+	+border-radius(10px 0 0 10px)
+	&:before
+		+s(prev-s)
+
+.main-slider__next
+	+border-radius(0 10px 10px 0)
+	&:before
+		+s(next-s)
+
+.advantage
+	padding-top: 11px
+	border-top: 1px solid #000
+	+box-sizing(border-box)
+	height: 100px
+	+font
+	color: #fff
+	font-size: 20px
+	background: url(../img/form-bg.jpg) 0 0 repeat
+	ul
+		+clr
+	li
+		float: left
+		width: 33.3%
+		text-align: center
+		div
+			display: inline-block
+			vertical-align: middle
+			width: 48%
+			text-align: left
+	img
+		vertical-align: middle
+		margin-right: 29px

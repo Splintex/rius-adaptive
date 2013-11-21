@@ -1,0 +1,493 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5,
+h6, p, blockquote, pre,a, abbr, acronym, address, big,
+cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small,
+strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt,
+dd, ol, ul, li,fieldset, form, label, legend,table, caption,
+tbody, tfoot, thead, tr, th, td,article, aside, canvas, details,
+embed, figure, figcaption, footer, header, hgroup, menu, nav,
+output, ruby, section, summary,time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	vertical-align: baseline
+
+body, html
+	height: 100%
+
+img,fieldset
+	border: none
+
+input[type="submit"], button
+	cursor: pointer
+
+input[type='submit']::-moz-focus-inner
+	padding: 0
+	border: 0
+
+textarea
+	overflow: auto
+
+input, button
+	margin: 0
+	padding: 0
+	border: 0
+
+input, textarea, select,button,
+h1,h2,h3,h4,h5,h6,a,span,a:focus
+	outline: none
+
+ul,ol
+	list-style-type: none
+
+
+article, aside, details, figcaption, figure, footer, header,
+hgroup, menu, nav, section
+	display: block
+
+table
+	border-spacing: 0
+	border-collapse: collapse
+body
+	min-width: 320px
+	color: #474747
+	font: 14px Arial, sans-serif
+	line-height: 1.4
+	+selection
+		background: rgba(0, 0, 0, 0.2)
+
+a
+	color: #913423
+	&:hover
+		text-decoration: none
+
+.l-layout
+	margin: 0 auto
+	position: relative
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	background: url(../img/bg.jpg)
+
+.section
+	padding-top: 38px
+	+r(step1000)
+		padding-top: 20px
+.section_index
+	padding-top: 58px
+	+r(step1000)
+		padding-top: 0
+
+.push
+	clear: both
+	height: 75px
+
+.wrapper
+	overflow: hidden
+
+.wrap
+	@extend %clr
+
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	overflow: hidden
+	height: 58px
+	z-index: 10000
+	background: #222121
+	+background-image(linear-gradient(bottom, #222121 0%, #272525 100%))
+	+box-shadow(0px 2px 10px rgba(0, 0, 0, 0.6))
+	.l-container
+		+clr
+	.logo
+		display: none
+		margin-right: 60px
+		+r(step1000)
+			display: block !important
+			opacity: 1 !important 
+	+r(step1000)
+		height: 40px
+.logo
+	float: left
+	//width: 69px
+	margin-top: 9px
+	a
+		display: block
+		+hide-text
+		+s(logo)
+
+.menu
+	float: left
+	+r(step1000)
+		position: fixed
+		right: 5px
+		top: 5px
+		display: none
+	li
+		line-height: 58px
+		display: inline-block
+		margin-left: 3.7%
+		&:first-child
+			margin-left: 0
+	a
+		text-decoration: none
+		font: bold 12px Arial, sans-serif
+		color: #e1e1e1
+		text-transform: uppercase
+
+.language
+	overflow: hidden
+	float: right
+	width: 147px
+	height: 58px
+	border-left: 1px solid #1a1c1f
+	+box-shadow(inset 1px 0 1px #312f2f)
+	+r(step1000)
+		height: 40px
+	ul
+		float: right
+		overflow: hidden
+		width: 122px
+		height: 26px
+		margin-top: 15px
+		border: 1px solid #1a1b1e
+		+border-radius(3px)
+		+box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.1))
+		+r(step1000)
+			margin-top: 6px
+	li
+		float: left
+		border-left: 1px solid #1a1c1f
+		&:first-child
+			border: none
+	a
+		display: block
+		height: 20px
+		width: 39px
+		padding-top: 5px
+		border-top: 1px solid #474545
+		border-left: 1px solid #474545
+		text-align: center
+		text-decoration: none
+		color: #fff
+		font: bold 11px Arial, sans-serif
+		+text-shadow(0 -1px 0 rgba(4, 4, 4, 0.35))
+		text-transform: uppercase
+		background: #313030
+		+background-image(linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%))
+	a.is-active
+		width: 40px
+		height: 20px
+		padding-top: 6px
+		border: none
+		+box-shadow(inset 0 1px 3px rgba(0, 0, 0, 0.3))
+		+background-image(linear-gradient(bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%))
+.header-bottom
+	padding-top: 4px
+	clear: both
+	color: #fff
+	height: 113px
+	+box-sizing(border-box)
+	border-bottom: 1px solid #000
+	background: url(../img/form-bg.jpg) repeat
+	.logo
+		+r(step1000)
+			display: none
+		a
+			+s(logo2)
+
+.header__contacts
+	float: right
+	width: 50%
+	+clr
+	+font
+	+r(step1000)
+		width: 100%
+		+border-box
+		padding: 0 10px 
+.main-contacts
+	padding-top: 20px
+	div
+		padding-left: 16px
+		border-left: 1px solid #909090
+	strong
+		position: relative
+		display: block
+		margin-bottom: 4px
+		padding-left: 16px
+		font: bold 13px Arial,sans-serif
+		text-transform: uppercase
+		&:before
+			content: ""
+			position: absolute
+
+.main-contacts_adr
+	float: left
+	strong
+		&:before
+			left: -6px
+			top: -2px
+			+s(point2)
+	a
+		color: #f9a870
+		text-decoration: none
+		border-bottom: 1px dotted
+		font: normal 13px Arial,sans-serif
+
+.main-contacts_phone
+	float: right
+	strong
+		&:before
+			left: -4px
+			top: -5px
+			+s(mob2)
+
+
+.l-container
+	width: 1000px
+	padding: 0 5px
+	margin: 0 auto
+	+border-box
+	+r(step1000)
+		width: 100%
+
+.pager
+	text-align: center
+	margin-bottom: 33px
+	button
+		margin-left: 7px
+		vertical-align: middle
+		background: #625d59
+		+border-radius(50%)
+		width: 14px
+		height: 14px
+		&:first-child
+			margin-left: 0
+		&:first-child.is-active,
+		&:first-child.cycle-pager-active
+			margin: -1px -1px 0 0
+	.is-active,
+	.cycle-pager-active
+		position: relative
+		margin: -1px -1px 0 5px
+		width: 17px
+		height: 17px
+		background: #140e0c
+
+.input-wrap
+	margin-bottom: 16px
+	label
+		font-weight: bold
+		font-size: 13px
+		color: #fff
+		text-shadow: 0 1px 0 #000
+
+.input
+	margin-top: 8px
+	padding: 0 10px
+	height: 37px
+	display: block
+	width: 100%
+	font: normal 13px Arial,sans-serif
+	+box-sizing(border-box)
+	+placeholder(#767676, Arial)
+	border: 1px solid #000
+	color: #2d2d2d
+	+border-radius(5px)
+	+box-shadow(inset 0 1px 2px #999188)
+
+.textarea
+	padding: 10px
+	resize: vertical
+	min-height: 115px
+	max-height: 150px
+
+.input-wrap_mod
+	margin-bottom: 8px
+	label
+		color: #000
+		text-shadow: none
+		font-weight: normal
+	.input
+		background: #fbf7f1
+		border: none
+		height: 35px
+		&:focus
+			+box-shadow(inset 0 0 2px #999188)
+	.textarea
+		min-height: 125px
+		max-height: 175px
+
+.input-row
+	+clr
+	.input
+		float: left
+		margin-left: 11px
+		&:first-child
+			margin-left: 0
+.input_half_l
+	width: 48%
+	margin-left: 0 !important
+
+.input_half_r
+	width: 48%
+
+.input_city
+	width: 141px
+
+.input_street
+	width: 190px
+
+.input_house
+	width: 75px
+
+.input_office
+	width: 49px
+.input-wrap-c
+	text-align: center
+	margin-top: 8px
+.input-wrap-c 
+	label
+		font-weight: bold
+		font-size: 13px
+		color: #fff
+		text-shadow: 0 1px 0 #000
+		text-transform: uppercase
+
+.btn
+	display: inline-block
+	padding: 0 24px
+	color: #fff
+	height: 45px
+	text-align: center
+	text-decoration: none
+	font: bold 13px/45px Arial,sans-serif
+	text-shadow: 0 -1px 0 #b16837
+	+border-radius(5px)
+	+box-sizing(border-box)
+	+box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 3px rgba(0, 0, 0, 0.75))
+	background: #f49b5e
+	+background-image(linear-gradient(#f49b5e, #d76e28))
+	&:hover
+		+background-image(linear-gradient(#d76e28, #f49b5e))
+	&:active
+		background: #f49b5e
+
+.map-point
+	display: inline-block
+	+s(map-point)
+
+.select
+	margin-top: 8px
+	position: relative
+	height: 35px
+	select
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 2
+		display: block
+		width: 100%
+		height: 35px
+		+opacity(0)
+
+.select__btn
+	position: absolute
+	left: 0
+	top: 0
+	padding: 0 33px 0 10px
+	width: 100%
+	height: 35px
+	line-height: 35px
+	background: #fff
+	+background-image(linear-gradient(white, #dbdbdb))
+	color: #2d2d2d
+	+box-sizing(border-box)
+	+border-radius(5px)
+	&:after
+		content: ""
+		position: absolute
+		top: 50%
+		margin-top: -3px
+		right: 13px
+		+s(select-arr)
+	span
+		display: block
+		white-space: nowrap
+		overflow: hidden
+		text-overflow: ellipsis
+
+.map-point
+	position: relative
+	z-index: 2000
+	text-align: center
+	+s(map-point)
+	img
+		+border-radius(50%)
+
+.map-point_big
+	line-height: 82px
+	+s(map-point-big)
+	&:after
+		content: ""
+		position: absolute
+		right: 12px
+		bottom: -3px
+		+s(map-point-shadow)
+	img
+		vertical-align: middle
+
+.map-point_rius
+	line-height: 74px
+	img
+		+border-radius(0)
+.footer
+	position: relative
+	height: 74px
+	border-top: 1px solid #292828
+	font: 11px Arial, sans-serif
+
+.footer__wrap
+	background: #e8e1d9
+	position: relative
+	z-index: 2000
+	height: 74px
+
+.footer .l-container
+	position: relative
+	+clr
+
+.footer__rights
+	float: left
+	width: 122px
+	margin-top: 28px
+	a
+		text-decoration: none
+		font-weight: bold
+		&:hover
+			text-decoration: underline
+
+.footer__socials
+	margin-left: 255px
+	float: left
+	margin-top: 28px
+	text-align: center
+	+r(step880)
+		margin-left: 5%
+	.facebook
+		display: inline-block
+		+s(f)
+		vertical-align: middle
+
+.footer__creaters
+	position: relative
+	width: 112px
+	margin-top: 28px
+	float: right
+	&:before
+		content: ""
+		position: absolute
+		top: 5px
+		left: -44px
+		+s(sparkle)
