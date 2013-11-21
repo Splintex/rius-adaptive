@@ -58,22 +58,20 @@
 	span
 		position: relative
 		display: inline-block
-		&:before
-			content: ""
-			position: absolute
-			top: 37px
-			left: -1037px
-			max-width: 1000px
-			height: 1px
-			background: #140e0c
+		&:before,
 		&:after
 			content: ""
 			position: absolute
 			top: 37px
-			right: -1037px
-			max-width: 1000px
+			width: 1000px
 			height: 1px
 			background: #140e0c
+			+r(step880)
+				top: 28px
+		&:before
+			left: -1037px
+		&:after
+			right: -1037px
 
 .title-l-2
 	+font
