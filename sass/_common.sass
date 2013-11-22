@@ -52,6 +52,8 @@ body
 	color: #474747
 	font: 14px Arial, sans-serif
 	line-height: 1.4
+	+r(step600)
+		font-size: 12px
 	+selection
 		background: rgba(0, 0, 0, 0.2)
 
@@ -392,26 +394,29 @@ a
 	+r(step880)
 		width: 30%
 	+r(step600)
-		width: 49%
+		width: 100%
+		margin-left: 0 !important
 .input_street
 	width: 190px
 	+r(step880)
 		width: 30%
 	+r(step600)
-		width: 49%
+		width: 100%
+		margin-left: 0 !important
 .input_house
 	width: 75px
 	+r(step880)
 		width: 17%
 	+r(step600)
-		width: 49%
+		width: 100%
 		margin-left: 0 !important
 .input_office
 	width: 49px
 	+r(step880)
 		width: 17%
 	+r(step600)
-		width: 49%
+		width: 100%
+		margin-left: 0 !important
 .input-wrap-c
 	text-align: center
 	margin-top: 8px
@@ -578,9 +583,18 @@ a
 	+border-box
 	&:first-child
 		padding-left: 0
+		+r(step600)
+			padding: 0 10px 
+	+r(step600)
+		float: none
+		width: 100%
+		margin-bottom: 20px
+		padding: 0 10px
 .wrap
 	+clr
 .content-cols
 	text-align: justify
 	ul
 		list-style: square
+		+r(step600)
+			margin-left: 15px

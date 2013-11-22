@@ -16,6 +16,10 @@
 			font-size: 40px
 		+r(step880)
 			font-size: 36px
+		+r(step600)
+			font-size: 30px
+		+r(step480)
+			font-size: 24px
 		span
 			position: relative
 			display: inline-block
@@ -39,10 +43,22 @@
 		+font
 		font-size: 28px
 		color: #913423
+		+r(step880)
+			font-size: 24px
+		+r(step600)
+			font-size: 18px
+		+r(step480)
+			font-size: 16px
 	h3
 		+font
 		font-size: 24px
 		color: #913423
+		+r(step880)
+			font-size: 20px
+		+r(step600)
+			font-size: 16px
+		+r(step480)
+			font-size: 14px
 
 .title-l-1
 	overflow: hidden
@@ -75,14 +91,22 @@
 
 .title-l-2
 	+font
-	font-size: 28px
+	font-size: 28px  
 	color: #913423
-
+	+r(step880)
+		font-size: 24px
+		margin: 20px 0 10px 
+	+r(step600)
+		font-size: 18px
 .title-l-3
 	+font
 	font-size: 24px
 	color: #913423
-
+	+r(step880)
+		font-size: 20px
+		margin: 0 0 10px 
+	+r(step600)
+		font-size: 16px
 .communic
 	padding: 4% 5%
 	+r(step1024)
@@ -314,11 +338,16 @@
 	z-index: 10000
 	bottom: 0
 	background: #303030 url(../img/form-bg.jpg) 0 0 repeat
-
+	+r(step1024)
+		position: relative
+		top: auto
+		bottom: auto
 .form_mod
 	bottom: 75px
 	position: absolute
-
+	+r(step1024)
+		position: relative
+		bottom: auto
 .form__wrap
 	display: none
 	+clr
@@ -472,7 +501,10 @@
 	sup
 		vertical-align: top
 		font-size: 34px
-
+	+r(step880)
+		font-size: 36px
+	+r(step600)
+		font-size: 30px
 .square__bottom
 	position: relative
 	+font_b
