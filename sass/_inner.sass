@@ -87,11 +87,19 @@
 			height: 1px
 			background: #140e0c
 			+r(step880)
-				top: 28px
+				top: 25px
+			+r(step600)
+				top: 20px
+			+r(step480)
+				top: 16px
 		&:before
 			left: -1037px
+			+r(step600)
+				left: -1018px
 		&:after
 			right: -1037px
+			+r(step600)
+				right: -1018px
 
 .title-l-2
 	+font
@@ -254,6 +262,9 @@
 		+s(point)
 	+r(step880)
 		width: 33%
+	+r(step600)
+		width: 50%
+		margin-bottom: 30px
 
 .cont-list__phone
 	width: 195px
@@ -261,6 +272,9 @@
 		+s(mob)
 	+r(step880)
 		width: 33%
+	+r(step600)
+		width: 50%
+		margin-bottom: 30px
 
 .cont-list__email
 	width: 145px
@@ -268,6 +282,9 @@
 		+s(email)
 	+r(step880)
 		width: 33%
+	+r(step600)
+		width: 50%
+		margin-bottom: 30px
 
 .map
 	width: 100%
@@ -297,7 +314,9 @@
 			height: auto
 		+r(step880)
 			float: none
-			margin: 20px auto 
+			width: 100%
+			margin: 20px auto   
+		
 .map__wrap
 	height: 100%
 	position: relative
@@ -321,6 +340,10 @@
 	+r(step1200)
 		position: static
 		margin: 0 auto 20px
+	+r(step880)
+		width: 80%
+	+r(step600)
+		width: 100%
 .feedback
 	left: 0
 	top: -144px
@@ -360,18 +383,26 @@
 
 .form__left
 	float: left
-	width: 321px
+	width: 400px
 	+r(step880)
 		+border-box
 		width: 50%
 		padding-right: 1%
+	+r(step360)
+		float: none
+		width: 100%
+		padding-right: 0
 .form__right
-	width: 488px
+	width: 450px
 	float: right
 	+r(step880)
 		+border-box
 		width: 50%
 		padding-left: 1%
+	+r(step360)
+		float: none
+		width: 100%
+		padding-left: 0
 .btn-cont
 	position: absolute
 	top: -32px
@@ -417,6 +448,8 @@
 		margin-left: 30px
 		&:first-child
 			margin-left: 0
+		+r(step880)
+			margin: 0 0 10px 20px
 	a
 		text-decoration: none
 		display: block
@@ -522,9 +555,11 @@
 		position: absolute
 		left: -10px
 		top: 8px
-		max-width: 272px
+		width: 272px
 		height: 9px
 		background: url(../img/wtf.png) 50% 0 no-repeat
+		+r(step880)
+			display: none
 
 .square-list
 	margin-bottom: 8px
@@ -536,12 +571,12 @@
 		vertical-align: top
 	div
 		float: left
-		max-width: 180px
+		width: 180px
 		+r(step880)
 			max-width: 100% 
 	strong
 		float: right
-		max-width: 100px
+		width: 100px
 		text-align: left
 		+r(step880)
 			max-width: 100%
@@ -565,7 +600,15 @@
 
 .plan.is-hidden
 	left: 5000em
-
+.plan-img 
+	.zoom-container
+		+r(step480)
+			width: 100%
+			display: block
+	img
+		+r(step480)
+		width: 100%
+		height: auto
 .btn-zoom-wrap
 	position: absolute
 	right: 70px

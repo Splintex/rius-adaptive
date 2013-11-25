@@ -3,14 +3,19 @@
 	color: #fff
 	min-height: 385px
 	padding-top: 93px
-	background: url(../img/index-bg.jpg) 50% 0 no-repeat
+	background: url(../img/index-bg.jpg) 100% 0 no-repeat
 	+box-sizing(border-box)
-	+background-size(100%, auto)
-	+r(step600)
-		padding-top: 50px
-		display: none
-	+r(step480)
-		padding-top: 20px
+	+background-size(auto,100%)
+	+r(step880)
+		//height: 400px !important
+		padding: 20px 0
+		min-height: 200px !important
+		//+background-size(100%,100%)
+	// +r(step600)
+	// 	padding-top: 50px
+	// 	display: none
+	// +r(step480)
+	// 	padding-top: 20px
 	.l-container
 		position: relative
 

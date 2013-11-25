@@ -356,6 +356,9 @@ a
 		font-size: 13px
 		color: #fff
 		text-shadow: 0 1px 0 #000
+	.btn
+		+r(step600)
+			margin-bottom: 10px
 
 .input
 	margin-top: 8px
@@ -450,6 +453,9 @@ a
 		color: #fff
 		text-shadow: 0 1px 0 #000
 		text-transform: uppercase
+		+r(step600)
+			text-transform: none
+			font-weight: normal
 
 .btn
 	display: inline-block
@@ -469,11 +475,14 @@ a
 		+background-image(linear-gradient(#d76e28, #f49b5e))
 	&:active
 		background: #f49b5e
-	+r(step600)
-		height: 35px
+	+r(step880)
+		height: 35px 
 		line-height: 35px
 		text-transform: none
 		font-size: 12px
+	+r(step480)
+		height: 30px
+		line-height: 30px
 .map-point
 	display: inline-block
 	+s(map-point)
@@ -554,13 +563,15 @@ a
 	height: 74px
 	border-top: 1px solid #292828
 	font: 11px Arial, sans-serif
-
+	+r(step600)
+		height: auto
 .footer__wrap
 	background: #e8e1d9
 	position: relative
 	z-index: 2000
 	height: 74px
-
+	+r(step600)
+		height: auto
 .footer .l-container
 	position: relative
 	+clr
@@ -582,6 +593,9 @@ a
 	text-align: center
 	+r(step880)
 		margin-left: 5%
+	+r(step600)
+		margin-left: 5px
+		float: left
 	.facebook
 		display: inline-block
 		+s(f)
@@ -592,6 +606,9 @@ a
 	width: 112px
 	margin-top: 28px
 	float: right
+	+r(step600)
+		float: left
+		margin-left: 5px
 	&:before
 		content: ""
 		position: absolute
