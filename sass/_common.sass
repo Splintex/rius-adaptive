@@ -209,8 +209,6 @@ a
 	ul
 		float: right
 		overflow: hidden
-		width: 122px
-		height: 26px
 		margin-top: 15px
 		border: 1px solid #1a1b1e
 		+border-radius(3px)
@@ -226,9 +224,8 @@ a
 			border: none
 	a
 		display: block
-		height: 20px
-		width: 39px
-		padding-top: 5px
+		padding: 6px 8px
+		+border-box
 		border-top: 1px solid #474545
 		border-left: 1px solid #474545
 		text-align: center
@@ -240,14 +237,11 @@ a
 		background: #313030
 		+background-image(linear-gradient(bottom, rgba(0, 0, 0, 0.15) 0%, rgba(255, 255, 255, 0.15) 100%))
 		+r(step480)
-			font-size: 11px
 			text-transform: none
-			width: 33px
+			padding: 4px 5px
 	a.is-active
-		width: 40px
-		height: 20px
-		padding-top: 6px
-		border: none
+		//width: 40px
+		border-color: transparent
 		+box-shadow(inset 0 1px 3px rgba(0, 0, 0, 0.3))
 		+background-image(linear-gradient(bottom, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.15) 100%))
 		+r(step480)
@@ -398,6 +392,8 @@ a
 	.textarea
 		min-height: 125px
 		max-height: 175px
+	.btn
+		margin-top: 10px
 
 .input-row
 	+clr
@@ -608,7 +604,7 @@ a
 	float: right
 	+r(step600)
 		float: left
-		margin-left: 5px
+		margin-left: 55px
 	&:before
 		content: ""
 		position: absolute

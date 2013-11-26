@@ -425,21 +425,31 @@
 		left: 13px
 		+s(up)
 
+.area-btn-close
+	float: right
+	text-shadow: none 
+	cursor: pointer
+	+background-image(linear-gradient(top, #a0a0a0 0%, #898989 100%))
+	&:hover
+		+background-image(linear-gradient(top, #898989 0%, #a0a0a0 100%))
 .btn-cont.is-active
 	+background-image(linear-gradient(top, #292727 0%, #373737 100%))
 	&:before
 		content: ""
 		position: absolute
 		top: 42%
-		left: 13px
+		left: 11px
 		+s(down)
 
 .btn-cont_office
 	right: 186px
-
+	width: 150px
+	white-space: nowrap
+	
 .btn-cont_room
 	right: 0
-
+	width: 170px
+	white-space: nowrap
 .tab
 	text-align: center
 	padding-top: 3px
