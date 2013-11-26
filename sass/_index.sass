@@ -81,15 +81,18 @@
 	+box-sizing(border-box)
 	height: 74px
 	+font
-	color: #fff
-	font-size: 20px
+	color: #fff    
+	font-size: 19px
 	background: url(../img/form-bg.jpg) 0 0 repeat
 	+r(step1024)
 		font-size: 16px
 	+r(step880)
-		font-size: 14px
-	+r(step600)
 		font-size: 12px
+	+r(step700)
+		padding-top: 27px
+	+r(step600)
+		font-size: 11px
+
 	ul
 		+clr
 	li
@@ -101,17 +104,17 @@
 			vertical-align: middle
 			//width: 48%
 			text-align: left
-			+r(step480)  
-				//width: 90%
+			+r(step700)  
+				padding-right: 10px
+				text-align: center
+				+box-sizing(border-box)
 	img
 		vertical-align: middle
 		margin-right: 29px
 		width: 50px
 		+r(step880)
-			margin-right: 4%
-		+r(step600)
-			//width: 60px
-			height: auto
-		+r(step480)  
+			margin-right: 5px
+			width: 45px
+		+r(step700)
 			display: none
 			
