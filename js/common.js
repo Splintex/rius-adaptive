@@ -62,9 +62,11 @@ $(document).ready(function() {
 // navigation
 	$(".menu a").click(function (){
 	 	var page = $(this).attr("href");
+	 	$(this).parents(".js-menu-list").hide();
         $('html, body').animate({
             scrollTop: $(page).offset().top
         }, 500);
+
 	 	return false;
     });
     $(".logo a").click(function (){
