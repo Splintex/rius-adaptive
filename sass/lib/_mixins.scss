@@ -1,4 +1,5 @@
 $step1024: 1024px;
+$stepmin1024: 1024px;
 $step1200: 1200px;
 $step880: 880px;
 $step600: 600px;
@@ -17,6 +18,10 @@ $step7: 320px;
 	@else if $media == step1024 {
 		// wider than $width
 		@media only screen and (max-width: $step1024) { @content; }
+	}
+	@else if $media == stepmin1024 {
+		// wider than $width
+		@media only screen and (min-width: $stepmin1024) { @content; }
 	}
 	@else if $media == step600 {
 		// wider than $width

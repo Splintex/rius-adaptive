@@ -1,1 +1,1 @@
-.menu{white-space:nowrap}
+.menu{white-space:nowrap}@media only screen and (min-width: 1024px){.menu ul{display:block !important}}
